@@ -1,0 +1,179 @@
+<html>
+<head>
+<style>
+.sub{
+	position: relative;
+	display: inline-block;
+	font-size: 16px;
+	padding: 16px;
+	}
+	.b1{
+	position: relative;
+	display: inline-block;
+	font-size: 16px;
+	padding: 16px;
+	}
+.y1{
+	position: relative;
+	display: inline-block;
+	font-size: 16px;
+	padding: 16px;}
+
+
+.a1{background-color: brown;
+	display: inline-block;
+	font-size: 16px;
+}
+.a3{background-color: Lightblue;
+	display: inline-block;
+	font-size: 16px;
+
+}
+
+.a2{
+	display: inline-block;
+	background-color: brown;
+	font-size: 16px;
+
+}
+
+.a4{background-color: greenyellow;
+	display: inline-block;
+	font-size: 20px;
+
+}
+</style>
+<script>
+function validation()
+{
+var name=document.getElementById("n").value;
+if(name=="")
+{
+alert("Name Cannot be blank");
+return false;
+}
+var phoneno=document.getElementById("ph").value;
+if(phnoeno=="")
+{
+alert("Phone Number Cannot be blank");
+return false;
+}
+var email=document.getElementById("em").value;
+if(email=="")
+{
+alert("Email Cannot be blank");
+return false;
+}
+var user=document.getElementById("un").value;
+if(user=="")
+{
+alert("UserName Cannot be blank");
+return false;
+}
+var Password=document.getElementById("pw").value;
+if(Password=="")
+{
+alert("Password Cannot be blank");
+return false;
+}
+var Year=document.getElementById("y").value;
+if(Year=="")
+{
+alert("Year Cannot be blank");
+return false;
+}
+var Department=document.getElementById("d").value;
+if(Department=="")
+{
+alert("Department Cannot be blank");
+return false;
+}
+var Subject=document.getElementById("d").value;
+if(Subject=="")
+{
+alert("Subject Cannot be blank");
+return false;
+}
+}
+</script>
+</head>
+<body>
+<form action="resource/html/pdf.php" onsubmit="return validation()">
+
+<table border=0 width=100%>
+<tr>
+<th valign=top>
+<img src="source/img/logo.png">
+</th><th><center>
+<font face="verdana" color="red"><font size="5">Dr.A.P.J.Abdul Kalam Technical Universuty,Lucknow,Uttar Pradesh                           
+</center></th>
+<th>
+<img src="source/img/apjn.png" width=70%></font></font>
+</th>
+</tr>
+</table>
+<br>
+<p><strong><font size="6"><marquee>Please choose the option give below and then click on login button</marquee></font></strong></p>
+
+<span class='a3'>YEAR</span><select class="y1" name="y">
+<option value="first">1<sup>st</sup>Year</option>
+<option value="second">2<sup>nd</sup>Year</option>
+<option value="third">3<sup>rd</sup>Year</option>
+<option value="fourth">4<sup>th</sup>Year</option>
+</select>
+&ensp;&ensp;&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<align="right">
+
+<span class='a1'>BRANCH</span><select class="b1" name="d" >
+<option value="bt">BT</option></font>
+<option value="ce">CE</option>
+<option value="cs">CS</option>
+<option value="cse">CSE</option>
+<option value="ec">EC</option>
+<option value="en">EN</option>
+<option value="it">IT</option>
+<option value="me">ME</option>
+</select>
+</align>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<align="right">
+<span class='a4'>Subject</span><select class="sub" name="s">
+<option value="c">C language</option>
+<option value="ch">Chemistry</option>
+<option value="el">Electrical</option>
+<option value="m1">MAth's-1</option>
+<option value="pc">Professional Communication</option>
+<option value="py">Physics</option>
+<option value="m2">Math's-2</option>
+<br>
+<option value="co">COA CSE/IT</option>
+<option value="daa">DAA</option>
+<option value="dbms">DBMS</option>
+
+<option value="di">Discreet Strcture Cse/IT</option>
+<option value="dacs">Data Structure Compute science/IT</option>
+<option value="dace">Data Structure Civil Engineering</option>
+<option value="eco">Economics</option>
+
+<option value="ee">Electronic Engg.</option>
+<option value="fmcv">Fluid Mechanics civil Engg.</option>
+<option value="fmme">Fluid Mechanics and MAchine</option>
+<option value="hv">HUMAN VALUES</option>
+<option value="mae">Material Engg.</option>
+<option value="m3">Math's-3</option>
+<option value="mp">Microprocessor</option>
+<option value="op">Operating System</option>
+<option value="py">Python</option>
+<option value="ss">Senseor</option>
+<option value="tc">Technical Communication</option>
+<option value="tam">Theory of automata and Formal Language</option>
+<option value="thd">Thermodynamnic</option>
+<option value="thd">Thermodynamnic</option>
+
+</select></center>
+</align>
+<br><br><br><br><br>
+&emsp;&emsp;<span class='a2'><input type="submit" value="Login"></span><br>
+</form>
+</body>
+</html>
